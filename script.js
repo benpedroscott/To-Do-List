@@ -9,12 +9,16 @@ function myFunction(){
     const todoList = document.getElementById("todoList");
 
     const buttonDelete = document.createElement("button");
-    buttonDelete.innerHTML = "delete";
+    buttonDelete.innerHTML = "x";
     buttonDelete.setAttribute("onclick", "deleteButton(this)")
+    buttonDelete.setAttribute("class", "listButtons");
+    buttonDelete.setAttribute("id", "deleteButton");
 
     const buttonDone = document.createElement("button");
-    buttonDone.innerHTML = "done";
-    buttonDone.setAttribute("onclick", "doneButton(this)")
+    buttonDone.innerHTML = "&#10003;";
+    buttonDone.setAttribute("onclick", "doneButton(this)");
+    buttonDone.setAttribute("class", "listButtons");
+    buttonDone.setAttribute("id", "doneButton");
 
     listItem.appendChild(listText);
     listItem.appendChild(buttonDelete);

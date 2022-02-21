@@ -1,3 +1,7 @@
+html {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+}
 
 body{
 display: flex;
@@ -7,4 +11,52 @@ align-items: center;
 
 h1{
   font-size: 2rem;
+}
+
+#confirmButton {
+  position: relative;
+  right: 100px;
+}
+
+.inputButtons {
+  position: relative;
+  top: -45px;
+  left: 130px;
+  margin: 5px;
+}
+
+
+ol {
+  max-width: 50%;
+}
+
+
+
+li{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.listButtons {
+  margin: 3px;
+  position: relative;
+  left: -10px;
+  width: 35px;
+  height: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+#doneButton {
+  background-color: green;
+}
+
+#deleteButton {
+  background-color: red;
 }
